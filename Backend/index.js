@@ -11,7 +11,7 @@ const cors = require("cors");
 app.use(express.json());//app auto pass the json
 app.use(cors(
     {
-        origin:[""],
+        origin:["https://gadai-senyum-apps-front.vercel.app/"],
         credentials:true,
         methods:["GET","POST","PUT","DELETE"],
     }
