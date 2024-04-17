@@ -12,8 +12,8 @@ app.use(express.json());//app auto pass the json
 app.use(cors(
     {
         origin:["https://gadai-senyum-apps-front.vercel.app"],
-        credentials:true,
-        methods:["GET","POST","PUT","DELETE"],
+        methods:["GET","POST","DELETE"],
+        credentials:true
     }
 ));//react.js connect to port
 
