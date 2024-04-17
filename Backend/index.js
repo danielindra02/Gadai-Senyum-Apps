@@ -13,7 +13,8 @@ app.use(cors(
     {
         origin:["https://gadai-senyum-apps-front.vercel.app"],
         methods:["GET","POST","DELETE"],
-        credentials:true
+        credentials:true,
+        accessControlAllowOrigin: ["https://gadai-senyum-apps-front.vercel.app"]
     }
 ));//react.js connect to port
 
