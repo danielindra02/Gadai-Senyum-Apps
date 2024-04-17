@@ -7,7 +7,7 @@ export const Popular = () => {
   const [popularProducts,setPopularProducts]=useState([]);
 
   useEffect(()=>{
-    fetch('http://localhost:4000/populardalamkamera')
+    fetch('https://gadai-senyum-apps.vercel.app/populardalamkamera')
     .then((response)=>response.json())
     .then((data)=>setPopularProducts(data));
   },[]);

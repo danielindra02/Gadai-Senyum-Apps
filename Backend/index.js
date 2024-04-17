@@ -9,7 +9,13 @@ const path = require("path"); //include path express server to access backend ap
 const cors = require("cors");
 
 app.use(express.json());//app auto pass the json
-app.use(cors());//react.js connect to port
+app.use(cors(
+    {
+        origin:[""],
+        credentials:true,
+        methods:["GET","POST","PUT","DELETE"],
+    }
+));//react.js connect to port
 
 //Database connection with mongoDB
 mongoose.connect("mongodb+srv://danielindra02:UCNNoBKnac70Qns8@cluster0.zkkkwxf.mongodb.net/")

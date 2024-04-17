@@ -6,7 +6,7 @@
   const [new_collection,setNew_collections]=useState([]);
 
   useEffect(()=>{
-    fetch('http://localhost:4000/barangbaru')
+    fetch('https://gadai-senyum-apps.vercel.app/barangbaru')
     .then((response)=>response.json())
     .then((data)=>setNew_collections(data));
   },[])

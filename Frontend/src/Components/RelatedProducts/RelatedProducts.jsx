@@ -9,7 +9,7 @@ export const RelatedProducts = () => {
   const [relatedProducts,setRelatedProducts]=useState([]);
 
   useEffect(()=>{
-    fetch('http://localhost:4000/relatedproducts')
+    fetch('https://gadai-senyum-apps.vercel.app/relatedproducts')
     .then((response)=>response.json())
     .then((data)=>setRelatedProducts(data));
   },[]);
