@@ -9,6 +9,7 @@ const path = require("path"); //include path express server to access backend ap
 const cors = require("cors");
 
 app.use(express.json());//app auto pass the json
+
 app.use(cors(
     {
         origin:["https://gadai-senyum-apps-front.vercel.app"],
@@ -16,7 +17,12 @@ app.use(cors(
         credentials:true,
         accessControlAllowOrigin: ["https://gadai-senyum-apps-front.vercel.app"]
     }
-));//react.js connect to port
+));
+
+app.listen(5000, console.log("Server Running"));
+
+
+//react.js connect to port
 
 //Database connection with mongoDB
 mongoose.connect("mongodb+srv://danielindra02:UCNNoBKnac70Qns8@cluster0.zkkkwxf.mongodb.net/")
