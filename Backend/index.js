@@ -20,10 +20,6 @@ app.use(cors(
         }
     }
 ));
-
-app.listen(4000, console.log("Server Running"));
-
-
 //react.js connect to port
 
 //Database connection with mongoDB
@@ -35,6 +31,8 @@ app.get("/",(req,res)=>{
     res.send("Express App is Running")
     console.log("Express App is Running");
 })
+
+module.exports = app;
 
 // image storage engine
 
