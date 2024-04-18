@@ -25,6 +25,7 @@ mongoose.connect("mongodb+srv://danielindra02:UCNNoBKnac70Qns8@cluster0.zkkkwxf.
 
 app.get("/",(req,res)=>{
     res.send("Express App is Running")
+    console.log("Express App is Running");
 })
 
 // image storage engine
